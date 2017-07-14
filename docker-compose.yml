@@ -1,0 +1,22 @@
+version: '2.1'
+services:
+  nginx:
+    image: jwilder/nginx-proxy
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock
+
+  whoami:
+    image: jwilder/whoami
+    container_name: whoami
+    environment:
+      - VIRTUAL_HOST=whoami.local
+
+  web:
+    image: ambientum/php:7.0-caddy
+    container_name: caddy
+    environment:
+      - VIRTUAL_HOST=webca.local
+    volumes:
+      - .:/var/www/app
