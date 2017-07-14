@@ -17,6 +17,6 @@ services:
     image: ambientum/php:7.0-caddy
     container_name: caddy
     environment:
-      - VIRTUAL_HOST=webca.local
+      - VIRTUAL_HOST=caddy.local
     volumes:
       - .:/var/www/app
