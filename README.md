@@ -1,5 +1,5 @@
 # nginx-proxy_sample
-Sample Repository for Nginx Proxy
+Sample Repository for Nginx Proxy (https://github.com/jwilder/nginx-proxy)
 
 # prepare for run
 Add hosts in /etc/hosts
