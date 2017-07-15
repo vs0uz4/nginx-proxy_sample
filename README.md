@@ -2,13 +2,11 @@
 Sample Repository for Nginx Proxy (https://github.com/jwilder/nginx-proxy)
 
 # prepare for run
-
-579/5000
 Add in the local hosts file the domains whoami.local and caddy.local pointing them to the address 127.0.0.1
 
 The location of the hosts file will depend a lot on the operating system you are using. To illustrate, we will demonstrate the location of the file on two well-known and widely used operating systems, Windows and Linux.
 
-- In linux the file can be found in (/ etc / hosts) and should at least have the following content:
+- In linux the file can be found in (/etc/hosts) and should at least have the following content:
 ```
 #
 # /etc/hosts: static lookup table for host names
@@ -27,8 +25,7 @@ The location of the hosts file will depend a lot on the operating system you are
 # End of file
 ```
 
-
-- In Windows, it can be found in (C: \ Windows \ System32 \ drivers \ etc \ hosts) and should at least have the following content:
+- In Windows, it can be found in (C:\Windows\System32\drivers\etc\hosts) and should at least have the following content:
 ```
 # Copyright (c) 1993-2006 Microsoft Corp.
 #
